@@ -29,11 +29,12 @@
     display: inline-block
     line-height: $base-font-size * 2
     padding: 0 $gutter
+    margin-top: $base-font-size
     margin-bottom: 0
     display: block
     font-weight: bold
     text-transform: uppercase
-    // font-size: 80%
+    font-size: $base-font-size
     color: $menu-color
     white-space: nowrap
 
@@ -286,9 +287,14 @@
     padding: 5px
     border-radius: 100%
   i
-    font-size: 30px
+    font-size: 2.5rem
     float: left
     cursor: pointer
+
+.wy-nav-title
+  width: 100%
+  @include display(flex)
+  @include justify-content(center)
 
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
@@ -346,7 +352,8 @@ footer
   .wy-body-for-nav
     background: $section-background-color
   .wy-nav-top
-    display: block
+    @include display(flex)
+    @include align-items(center)
   .wy-nav-side
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
