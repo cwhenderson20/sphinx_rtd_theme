@@ -33,7 +33,7 @@
     display: block
     font-weight: bold
     text-transform: uppercase
-    font-size: 80%
+    // font-size: 80%
     color: $menu-color
     white-space: nowrap
 
@@ -65,7 +65,7 @@
       margin-left: -1.2em
       @extend .fa
       @extend .fa-plus-square-o
-      font-size: .8em
+      font-size: $base-font-size * 0.85
       line-height: 1.6em
       color: darken($menu-link-medium, 20%)
 
@@ -89,7 +89,7 @@
       @extend .fa
       @extend .fa-minus-square-o
       display: block
-      font-size: .8em
+      font-size: $base-font-size * 0.85
       line-height: 1.6em
       color: darken($menu-link-medium, 30%)
 
@@ -149,7 +149,7 @@
     padding: $gutter / 4 $gutter
     display: block
     position: relative
-    font-size: 90%
+    font-size: $base-font-size
     color: $menu-link-light
     &:hover
       background-color: lighten($menu-background-color, 10%)
